@@ -102,12 +102,12 @@ const GroupsPage = () => {
             required
           />
 
-          <label className="groups-label">Hostnames / IPs / Device IDs (comma separated)</label>
+          <label className="groups-label">Hostnames(comma separated)</label>
           <input
             className="input"
             value={membersInput}
             onChange={(e) => setMembersInput(e.target.value)}
-            placeholder="10.10.10.251, dr-dcim"
+            placeholder="10.10.10.251"
           />
 
           <div className="groups-create-actions">
@@ -153,8 +153,8 @@ const GroupsPage = () => {
                       <td>{new Date(g.created_at).toLocaleString()}</td>
                       <td>{new Date(g.updated_at).toLocaleString()}</td>
                       <td className="groups-actions-cell">
-                        <button className="btn btn--small" onClick={() => { setEditGroup(g); setModalOpen(true); }}>Edit</button>
-                        <button className="btn btn--small" onClick={() => handleDelete(g.id)}>Delete</button>
+                        <button className="btn btn--small edit-group" onClick={() => { setEditGroup(g); setModalOpen(true); }}>Edit</button>
+                        <button className="btn btn--small delete-group" onClick={() => handleDelete(g.id)}>Delete</button>
                       </td>
                     </tr>
                   ))

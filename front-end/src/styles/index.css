@@ -295,7 +295,9 @@ body {
   font-family: inherit;
   transition: var(--transition);
 }
-.btn:hover { background: var(--bg-hover); }
+/* .btn:hover { background: var(--bg-hover); } */
+
+
 .btn--primary {
   background: var(--primary);
   color: #fff;
@@ -695,4 +697,13 @@ code {
   gap: 8px;
   justify-content: flex-end;
   margin-top: 8px;
+}
+
+.edit-group {
+  background: var(--primary);
+  color: #fff;
+}
+.delete-group {
+  background: var(--red);
+  color: #fff;
 }
