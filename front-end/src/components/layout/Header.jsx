@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header__left">
-        <img src="/favicon.svg" alt="Logo" className="header__logo" />
+        <img src="/logo.png" alt="Logo" className="header__logo" />
         <h1 className="header__title">InfraDB Monitoring</h1>
       </div>
       <nav className="header__nav">
